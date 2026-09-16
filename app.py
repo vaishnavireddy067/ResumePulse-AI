@@ -11,7 +11,7 @@ from utils.rag import create_resume_vector_db, query_resume
 
 # Page Configuration
 st.set_page_config(
-    page_title="HR Resume Screening AI",
+    page_title="ResumePulse AI - Smart ATS Screening",
     page_icon="🤖",
     layout="wide"
 )
@@ -47,7 +47,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Application Header
-st.title("🤖 HR Resume Screening AI Agent")
+st.title("🤖 ResumePulse AI - Smart ATS Screener")
 st.markdown("### Intelligent Candidate Shortlisting & Ranking System")
 st.markdown("---")
 

@@ -1,6 +1,6 @@
-# 🤖 HireMind AI - HR Resume Screening AI Agent
+# 🤖 ResumePulse AI — Smart Resume Screening & ATS Screener
 
-**HireMind AI** is an AI-powered recruitment platform and Advanced ATS (Applicant Tracking System) powered by **Groq AI (Llama 3)** to automate resume screening, calculate ATS scores, extract skills, match candidates with job descriptions, detect skill gaps and red flags, verify authenticity, and provide intelligent hiring recommendations to help recruiters make faster and smarter hiring decisions.
+**ResumePulse AI** is an AI-powered recruitment platform and Advanced ATS (Applicant Tracking System) powered by **Groq AI (Llama 3)** to automate resume screening, calculate ATS scores, extract skills, match candidates with job descriptions, detect skill gaps and red flags, verify authenticity, and provide intelligent hiring recommendations to help recruiters make faster and smarter hiring decisions.
 
 ---
 
@@ -46,8 +46,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/vaishnavireddy067/HireMind-AI.git
-cd HireMind-AI
+git clone https://github.com/vaishnavireddy067/ResumePulse-AI.git
+cd ResumePulse-AI
 ```
 
 ### 2. Install Dependencies
