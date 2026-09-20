@@ -1,53 +1,81 @@
-# 🤖 ResumePulse AI — Smart Resume Screening & ATS Screener
+# 🧠 HireMind AI — Agentic Talent Intelligence Platform
 
-**ResumePulse AI** is an AI-powered recruitment platform and Advanced ATS (Applicant Tracking System) powered by **Groq AI (Llama 3)** to automate resume screening, calculate ATS scores, extract skills, match candidates with job descriptions, detect skill gaps and red flags, verify authenticity, and provide intelligent hiring recommendations to help recruiters make faster and smarter hiring decisions.
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B.svg)](https://streamlit.io/)
+[![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-4285F4.svg)](https://ai.google.dev/)
+[![Groq](https://img.shields.io/badge/AI-Groq%20Llama%203.3-F55036.svg)](https://groq.com/)
+[![FAISS](https://img.shields.io/badge/Vector%20DB-FAISS-0052CC.svg)](https://github.com/facebookresearch/faiss)
+
+**HireMind AI** is an Agentic AI-powered recruitment and talent intelligence platform that automates resume screening, deep ATS scoring, skill gap matching, customized coding assessment generation, structured interview rubrics, and recruiter outreach using collaborative AI agents.
 
 ---
 
-## 🌟 Key Features
+## 🌟 Key Capabilities & Collaborative Agents
 
-### 1️⃣ Smart Resume Parsing & Ranking
-- **Multi-Format Support**: Upload resumes in **PDF** or **DOCX** formats.
-- **Intelligent Matching**: Uses **TF-IDF & Cosine Similarity** for speed, or **AI Semantic Analysis (Groq Llama 3)** for deep contextual matching.
-- **Skill Gap Analysis**: Identifies missing skills and strengths for each candidate.
+```
+                               ┌────────────────────────────────┐
+                               │     Recruiter / Hiring Team    │
+                               └───────────────┬────────────────┘
+                                               │ Uploads JDs & Resumes
+                                               ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+│                             🧠 HIREMIND MULTI-AGENT ORCHESTRATOR                            │
+├───────────────────┬───────────────────┬────────────────────┬────────────────────────────────┤
+│ 🕵️ Screening Agent│ 🎯 SkillGap Agent │ 💻 Coding Agent    │ 🎙️ Interview Rubric Agent       │
+│ • Parsing PDF/DOCX│ • Core Match      │ • Tailored Test    │ • Deep Technical Questions     │
+│ • Blended ATS Sc. │ • Missing Skills  │ • Boilerplate Code │ • Behavioral Scenarios         │
+│ • Semantic AI Fit │ • Growth Areas    │ • Rubric & Tests   │ • Architecture Challenges      │
+├───────────────────┴───────────────────┴────────────────────┴────────────────────────────────┤
+│ 🛡️ Red-Flag & Authenticity Agent   │ 💬 Vector RAG Chatbot    │ 📧 Automated Outreach Agent │
+│ • Keyword-stuffing detection       │ • FAISS Q&A with Resumes │ • 1-Click Interview Invites │
+│ • PII Redaction (Bias-Free Mode)   │ • Interactive Memory     │ • Rejections & Offer Notes  │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
+```
 
-### 2️⃣ Advanced AI Analysis
-- **🤖 Smart Resume Chatbot**: Chat with any candidate's resume using **Llama 3 via Groq**. Ask questions like *"Is this candidate good for a Senior role?"* or *"Summarize their experience"*.
-- **🔮 Hiring Prediction**: AI estimates the **Hiring Probability** (High/Medium/Low) based on the match score and skills.
-- **🕵️‍♂️ Authenticity Check**: Automatically detects red flags like **keyword stuffing**, suspicious length, or missing contact info to prevent fraud.
-- **Bias-Free Screening**: Toggle "Bias-Free Mode" to redact PII (Name, Email, Phone) for fair evaluation.
+### 1️⃣ Intelligent Resume Screening & ATS Ranking
+- **Multi-Format Extraction**: Batch upload and parse **PDF** and **DOCX** candidate resumes.
+- **Hybrid Scoring**: Combines **TF-IDF Keyword Density** and **Semantic AI Embeddings (Gemini / Groq Llama 3.3)** for fair, deep ranking.
+- **Hiring Probability Prediction**: AI badges (🟢 High, 🟡 Potential, 🔴 Low) with concrete next-step recommendations.
 
-### 3️⃣ Productivity Tools
-- **📧 Automated Email Outreach**: Generate personalized **Interview Invitation** or **Rejection Emails** with one click.
-- **🎤 Interview Question Generator**: Automatically creates technical questions tailored to the candidate's specific skill set.
+### 2️⃣ Tailored Coding Assessment Studio
+- Dynamically creates customized live coding challenges matching the candidate's exact tech stack and seniority level (Junior, Mid-Level, Senior, Lead).
+- Provides starter boilerplate code, sample test cases, and multi-criteria evaluation rubrics.
 
-### 4️⃣ Visual Dashboard
-- **Interactive Rankings**: Sort and filter candidates by match score.
-- **Comparative Analysis**: Compare multiple candidates side-by-side.
-- **Data Visualization**: interactive charts using **Plotly**.
+### 3️⃣ Structured Interview & System Design Rubrics
+- Generates deep technical questions with **"Good Answer Signals"** and **"Red Flag Warnings"**.
+- STAR-method behavioral questions and real-world architectural scenarios.
+
+### 4️⃣ Authenticity & Bias-Free Screening
+- **Fraud & Anomaly Detection**: Identifies keyword stuffing, suspicious brevity, and missing contact information.
+- **Bias-Free Mode**: Automatically redacts Personally Identifiable Information (PII) including Name, Email, and Phone number.
+
+### 5️⃣ Vector RAG Resume Chatbot
+- Chat interactively with any candidate's resume using **FAISS** vector embeddings and conversational LLM reasoning.
+
+### 6️⃣ Talent Analytics & Automated Outreach
+- Interactive Plotly visualizations for candidate score distribution and talent fit.
+- One-click personalized email generation for interview invites, offer discussions, and polite rejections.
+- CSV / Excel export for ATS integration.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: [Streamlit](https://streamlit.io/)
-- **AI / LLM**: **Groq API** (Llama 3.3 70B Versatile)
-- **Backend Logic**: Python
-- **NLP & ML**: Scikit-Learn, Spacy
-- **Data Processing**: PyPDF2, python-docx, Pandas
+- **Frontend & Dashboard**: Streamlit (Modern Custom Themed UI)
+- **AI / LLMs**: Google Gemini (`google-generativeai`) & Groq (`llama-3.3-70b-versatile`)
+- **Vector Search & RAG**: FAISS, LangChain, Sentence-Transformers
+- **NLP & Parsing**: PyPDF2, python-docx, Scikit-Learn, Spacy
+- **Data Analytics & Charts**: Pandas, Plotly
 
 ---
 
-## 🚀 Installation & Setup
-
-### Prerequisites
-- Python 3.8+ installed
-- A **Groq API Key** (Free tier available at [console.groq.com](https://console.groq.com))
+## 🚀 Quickstart & Installation
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/vaishnavireddy067/ResumePulse-AI.git
-cd ResumePulse-AI
+git clone https://github.com/vaishnavireddy067/HireMind-AI.git
+cd HireMind-AI
 ```
 
 ### 2. Install Dependencies
@@ -55,65 +83,48 @@ cd ResumePulse-AI
 pip install -r requirements.txt
 ```
 
-### 3. Set Up API Key
-To enable the AI Chatbot and Semantic Ranking, set your Groq API Key.
+### 3. Configure API Keys (Optional but Recommended)
+Set your Google Gemini or Groq API key in your environment or enter it directly in the application sidebar:
 
 **Windows PowerShell:**
 ```powershell
-$env:GROQ_API_KEY="your_actual_api_key_here"
+$env:GEMINI_API_KEY="your_gemini_api_key"
+$env:GROQ_API_KEY="your_groq_api_key"
 ```
 
-**Mac/Linux:**
+**macOS / Linux:**
 ```bash
-export GROQ_API_KEY="your_actual_api_key_here"
+export GEMINI_API_KEY="your_gemini_api_key"
+export GROQ_API_KEY="your_groq_api_key"
 ```
 
 ### 4. Run the Application
 ```bash
 streamlit run app.py
 ```
-*Note: If `streamlit` command is not found, try `python -m streamlit run app.py`*
 
-The app will open in your browser at `http://localhost:8501`.
-
----
-
-## 📖 Usage Guide
-
-1. **Enter Job Description**: Paste the JD in the left sidebar.
-2. **Upload Resumes**: Select multiple PDF/DOCX files.
-3. **Choose Ranking Method**: Select **"AI Semantic (Groq Llama 3)"** for best accuracy.
-4. **Analyze**: Click "Analyze & Rank Candidates".
-5. **Insights**:
-   - Check the **Hiring Prediction Badge** (Green/Orange/Red).
-   - Look for **Authenticity Warnings** ⚠️.
-   - Use the **"Chat with Resume"** tab to ask specific questions.
-   - Go to **"📧 Outreach"** tab to copy a generated email.
+The application will launch in your browser at `http://localhost:8501`.
 
 ---
 
 ## 📂 Project Structure
 
 ```
-HR_Resume_Screening_AI/
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Dependencies
+HireMind-AI/
+├── app.py                      # Main Streamlit Talent Intelligence Dashboard
+├── requirements.txt            # Project dependencies
 ├── utils/
-│   ├── parser.py          # Text extraction
-│   ├── matcher.py         # Ranking algorithms
-│   ├── extractor.py       # Entity extraction (Name, Email)
-│   ├── ai_features.py     # AI logic (Prediction, Auth Check, Email)
-│   ├── rag.py             # RAG / Chatbot logic
-│   └── translator.py      # Translation
-└── README.md              # Documentation
+│   ├── agentic_pipeline.py     # Multi-Agent Collaborative Orchestrator
+│   ├── ai_features.py          # Gemini/Groq LLM Engine & Assessment Generators
+│   ├── rag.py                  # FAISS Vector Store & RAG Chatbot
+│   ├── parser.py               # PDF & DOCX text extraction
+│   ├── matcher.py              # TF-IDF & Cosine Similarity matching
+│   ├── extractor.py            # Regex & Contact extraction
+│   └── translator.py           # Multi-language resume translator
+└── README.md                   # Platform documentation
 ```
 
 ---
 
-## 🔮 Future Roadmap
-
-- [ ] **Career Trajectory Analysis**: Visualize candidate growth over time.
-- [ ] **Social Media Scanning**: (Optional) Check LinkedIn profiles.
-- [ ] **Database Integration**: Save candidates to a database (SQL/NoSQL).
-
-#
+## 📄 License
+This project is licensed under the MIT License.
